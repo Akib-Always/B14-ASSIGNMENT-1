@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    .font{
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+}
+
+</style>
+</head>
+<body class="font">
+    <header> 
+        <div class="flex justify-between items-center px-8 md:px-16 py-4">
+            <div>
+                <img src="./assets/logo.png" alt="" class="h-8">
+            </div>
+            <div class="hidden md:block"> 
+                <ul class="flex space-x-4 text-gray-500 text-sm ">
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Tracks</a></li>    
+                    <li><a href="#">Venue</a></li>    
+                    <li><a href="#">Blog</a></li>    
+                </ul>
+            </div>
+            <div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm md:text-lg font-bold py-2 px-2 md:px-6 rounded transition duration-300">Register Now</button>
+            </div> 
+        </div>
+        <div class="relative py-16 bg-[url('./assets/banner.jpg')] bg-cover bg-center bg-no-repeat">
+
+    <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+
+    <!-- Content -->
+            <div class="relative z-10 text-center">
+                <h1 class="text-5xl text-white font-bold mb-4">Code. Connect. Create</h1>
+
+                <p class="text-lg text-gray-200 md:px-96">Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
+
+                <button class="bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-2 px-6 rounded transition duration-300 mt-60">Register Now</button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1 class="text-3xl font-bold text-center mt-10">Meet the Speakers</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-10 md:px-26 py-8">
+
+                <!-- card - 1 -->
+
+                <div class="border rounded-lg overflow-hidden bg-white">
+                    <img src="./assets/andrej.png" alt="" class="w-full h-64 object-cover">
+
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase text-blue-600">AI / ML</p>
+
+                        <h3 class="text-xl font-bold mt-2">Andrej Karpathy</h3>
+
+                        <p class="text-gray-500 text-sm mt-1">Pretraining Team, Anthropic</p>
+                    </div>
+                </div>
+
+
+                <!-- card - 2 -->
+
+                <div class="border rounded-lg overflow-hidden bg-white">
+                    <img src="./assets/demis.png" alt="" class="w-full h-64 object-cover">
+
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase text-blue-600">AI / ML</p>
+
+                        <h3 class="text-xl font-bold mt-2">Demis Hassabis</h3>
+
+                        <p class="text-gray-500 text-sm mt-1">Co-founder and CEO, DeepMind</p>
+                    </div>
+                </div>
+
+                <!-- card - 3 -->
+
+                <div class="border rounded-lg overflow-hidden bg-white">
+                    <img src="./assets/gary.png" alt="" class="w-full h-64 object-cover">
+
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase text-blue-600">AI / ML</p>
+
+                        <h3 class="text-xl font-bold mt-2">Gary Marcus</h3>
+
+                        <p class="text-gray-500 text-sm mt-1">Pretraining Team, Anthropic</p>
+                    </div>
+                </div>
+
+                <!-- card - 4 -->
+
+                <div class="border rounded-lg overflow-hidden bg-white">
+                    <img src="./assets/mustafa.png" alt="" class="w-full h-64 object-cover">
+
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase text-blue-600">AI / ML</p>
+
+                        <h3 class="text-xl font-bold mt-2">Mustafa Suleyman</h3>
+
+                        <p class="text-gray-500 text-sm mt-1">Co-founder and CEO, DeepMind</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="text-3xl font-bold text-center mt-10">
+                Secure Your Spot
+            </h1>
+            <p class="text-center text-gray-500 mt-2">Early-bird pricing ends August 15, 2026.</p>
+
+            <!-- Subscription Packages -->
+            <div class="px-10 md:px-20 md:px-46 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center mt-6">
+                <div class="p-5 border-1 border-black rounded-lg bg-[#FAF9F6]">
+                    <p class="text-[12px] opacity-50">Standard</p>
+                    <h1 class="text-3xl font-bold">$399</h1>
+                    <p class="text-[12px] opacity-50">per person</p>
+                    <hr class="mt-4">
+                    <div class="px-4 mt-4">
+                        <ul class="list-disc marker:text-blue-500 text-sm">
+                            <li>Access to all 3 conference days</li>
+                            <li>48 curated technical talks</li>
+                            <li>2 workshop sessions</li>
+                            <li>Networking lunch & coffee breaks</li>
+                            <li>Conference swag bag</li>
+                            <li>Digital recordings (30 days)</li>
+                        </ul>
+                    </div>
+                    <button class="mt-7 border-1 w-full rounded-lg text-sm p-2 "><a href="#" >Get Standard</a></button>
+                </div>
+                <div class="bg-[#0D1B2A] border-1 p-8 rounded-lg text-white">
+                    <p class="text-[12px] opacity-50">PRO</p>
+                    <h1 class="text-3xl font-bold">$749</h1>
+                    <p class="text-[12px] opacity-50">per person</p>
+                    <hr class="mt-4">
+                    <div class="px-4 mt-4">
+                        <ul class="list-disc marker:text-blue-500 text-sm">
+                            <li>Everything in Standard</li>
+                            <li>Unlimited workshop access</li>
+                            <li>Speaker meet & greet</li>
+                            <li>VIP networking dinner</li>
+                            <li>Lifetime recording access</li>
+                            <li>1-on-1 mentorship (30 min)</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="mt-4 w-full rounded-lg text-sm p-2 bg-[#2563EB]"><a href="#" >Get Standard</a></button>
+                </div>
+                <div class="border-1 border-black rounded-lg bg-[#FAF9F6] p-8">
+                    <p class="text-[12px] opacity-50">Team</p>
+                    <h1 class="text-3xl font-bold">$5,999</h1>
+                    <p class="text-[12px] opacity-50">up to 10 people</p>
+                    <hr class="mt-4">
+                    <div class="mt-4 px-4">
+                        <ul class="list-disc marker:text-blue-500 text-sm">
+                            <li>Everything in Pro (10 seats)</li>
+                            <li>Dedicated team lounge access</li>
+                            <li>Private workshop booking</li>
+                            <li>Company logo on event page</li>
+                            <li>Recruitment booth (1 day)</li>
+                            <li>Priority customer support</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="mt-4 border-1 w-full rounded-lg text-sm p-2 "><a href="#" >Get Standard</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 mt-6">
+            <section class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold">
+            Why Attend?
+        </h2>
+
+        <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+            Join thousands of developers, designers, and AI enthusiasts for an unforgettable experience filled with learning, networking, and innovation.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="border rounded-xl p-6 text-center hover:shadow-lg duration-300">
+            <div class="text-5xl mb-4">🎤</div>
+            <h3 class="text-xl font-semibold mb-2">Expert Speakers</h3>
+            <p class="text-gray-500">
+                Learn directly from world-class engineers, founders, and AI researchers.
+            </p>
+        </div>
+
+        <div class="border rounded-xl p-6 text-center hover:shadow-lg duration-300">
+            <div class="text-5xl mb-4">🤝</div>
+            <h3 class="text-xl font-semibold mb-2">Networking</h3>
+            <p class="text-gray-500">
+                Connect with professionals, recruiters, and fellow developers.
+            </p>
+        </div>
+
+        <div class="border rounded-xl p-6 text-center hover:shadow-lg duration-300">
+            <div class="text-5xl mb-4">💡</div>
+            <h3 class="text-xl font-semibold mb-2">Hands-on Workshops</h3>
+            <p class="text-gray-500">
+                Participate in practical coding sessions led by industry experts.
+            </p>
+        </div>
+
+        <div class="border rounded-xl p-6 text-center hover:shadow-lg duration-300">
+            <div class="text-5xl mb-4">🚀</div>
+            <h3 class="text-xl font-semibold mb-2">Career Growth</h3>
+            <p class="text-gray-500">
+                Discover opportunities, gain new skills, and stay ahead in technology.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+        </section>
+    </main>
+    <footer class="footer sm:footer-horizontal bg-base-300 text-base-content p-10 grid grid-cols-2 md:grid-cols-3 justify-center items-center">
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Social</h6>
+            <div class="grid grid-flow-col gap-4">
+            <a>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                </svg>
+            </a>
+            <a>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                </svg>
+            </a>
+            <a>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+            </a>
+            </div>
+            <div class="flex gap-2 mt-6 justify-end" >
+                <a href=""><img src="./assets/logo-mini.png" alt=""></a>
+                <p class="text-2xl font-bold">DEVCONF 2026</p>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
